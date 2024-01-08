@@ -1,0 +1,32 @@
+:root {
+  --md-primary-fg-color: #f8485e;
+  --md-primary-fg-color--light: #fcb0b9;
+  --md-primary-fg-color--dark: #9d0617;
+  --md-accent-fg-color: #fa7585;
+}
+
+[bookmarklets] span {
+  display: none;
+}
+
+[bookmarklets].content-loading::before {
+  content: "Chargement";
+}
+
+[bookmarklets].content-indisponible::before {
+  content: "Indisponible";
+}
+
+[bookmarklets].content-copy::before {
+  content: "Copier";
+}
+
+[bookmarklets]::before {
+  content: "Glissez-moi";
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.hide {
+  display: none !important;
+}
